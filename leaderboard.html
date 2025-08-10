@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboards - GameZone</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-purple-700 to-pink-600 p-6 text-white shadow-lg flex justify-between items-center">
+        <h1 class="text-3xl font-extrabold flex items-center space-x-3">
+            <i class="fas fa-trophy"></i>
+            <span>Leaderboards</span>
+        </h1>
+        <nav class="space-x-6">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="games.html" class="hover:underline">Games</a>
+            <a href="tournaments.html" class="hover:underline">Tournaments</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="max-w-5xl mx-auto bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-8 shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-center text-white">Global Leaderboards</h2>
+
+            <div id="leaderboardTabs" class="flex justify-center space-x-6 mb-8">
+                <button data-game="dice" class="leaderboard-tab bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded shadow transition">Dice Roll</button>
+                <button data-game="guess" class="leaderboard-tab bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded shadow transition">Guess the Number</button>
+            </div>
+
+            <table class="w-full text-white text-center rounded-lg overflow-hidden shadow-lg">
+                <thead class="bg-gradient-to-r from-pink-600 to-purple-700">
+                    <tr>
+                        <th class="p-4">Rank</th>
+                        <th class="p-4">Player</th>
+                        <th class="p-4">Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody" class="bg-white bg-opacity-20">
+                    <!-- Leaderboard data will be injected here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <a href="https://odoe.studio" target="_blank" rel="noopener" class="fixed bottom-4 right-4 bg-white bg-opacity-20 hover:bg-opacity-40 text-white text-xs rounded-full px-3 py-1 backdrop-blur-md shadow-md transition">
+        Made by Odoe
+    </a>
+
+    <script src="js/leaderboard.js"></script>
+</body>
+</html>
