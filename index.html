@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Platform - Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-purple-700 to-pink-600 p-6 text-white shadow-lg">
+        <h1 class="text-3xl font-extrabold flex items-center space-x-3">
+            <i class="fas fa-gamepad"></i>
+            <span>GameZone</span>
+        </h1>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="max-w-4xl mx-auto bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-8 shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-center text-white">Welcome to GameZone</h2>
+            <p class="text-lg text-indigo-200 mb-8 text-center max-w-2xl mx-auto">
+                Join exciting tournaments, compete on leaderboards, and enjoy interactive games all in one place!
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <a href="games.html" class="bg-indigo-600 hover:bg-indigo-700 transition-colors rounded-lg p-6 flex flex-col items-center justify-center text-white shadow-md">
+                    <i class="fas fa-dice fa-3x mb-4"></i>
+                    <span class="text-xl font-semibold">Play Games</span>
+                </a>
+                <a href="leaderboard.html" class="bg-pink-600 hover:bg-pink-700 transition-colors rounded-lg p-6 flex flex-col items-center justify-center text-white shadow-md">
+                    <i class="fas fa-trophy fa-3x mb-4"></i>
+                    <span class="text-xl font-semibold">Leaderboards</span>
+                </a>
+                <a href="tournaments.html" class="bg-purple-600 hover:bg-purple-700 transition-colors rounded-lg p-6 flex flex-col items-center justify-center text-white shadow-md">
+                    <i class="fas fa-users fa-3x mb-4"></i>
+                    <span class="text-xl font-semibold">Tournaments</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://odoe.studio" target="_blank" rel="noopener" class="fixed bottom-4 right-4 bg-white bg-opacity-20 hover:bg-opacity-40 text-white text-xs rounded-full px-3 py-1 backdrop-blur-md shadow-md transition">
+        Made by Odoe
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
