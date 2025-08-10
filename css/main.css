@@ -1,0 +1,28 @@
+/* Global styles and overrides for the gaming platform */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1b4b;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7c3aed;
+    border-radius: 10px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #a78bfa;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #a78bfa;
+}
